@@ -8,15 +8,15 @@ trigger:
 variables:
   buildConfiguration: 'Release'
   location: 'eastus'
-  acrHostName: 'knoxdocker001acr.azurecr.io'
-  acrName: 'knoxdocker001acr'
-  rgName: 'knoxdocker001-rg'
-  containerName: 'knoxdocker001'
-  appName: 'knoxdocker001'
+  acrHostName: 'reactdocker001acr.azurecr.io'
+  acrName: 'reactdocker001acr'
+  rgName: 'reactdocker001-rg'
+  containerName: 'reactdocker001'
+  appName: 'reactdocker001'
   vmImageName: 'ubuntu-latest'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  appSvcPlanName: 'knoxdocksvcplan'
+  appSvcPlanName: 'reactdocksvcplan'
 
 resources:
 - repo: self
